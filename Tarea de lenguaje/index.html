@@ -7,8 +7,10 @@
   </head>
   <body>
     <!-- Encabezado y menú -->
+    <!-- <header> agrupa el encabezado principal y el menú de navegación -->
     <header style="border: solid black">
       <h1>Mi Blog de Lenguaje de Tecnologia</h1>
+      <!-- <nav> contiene la navegación, permitiendo ir a distintas secciones -->
       <nav>
         <ul>
           <li><a href="#inicio">Inicio</a></li>
@@ -20,16 +22,19 @@
     </header>
     
     <!-- Contenido principal -->
+    <!-- <main> delimita el contenido central de la página -->
     <main>
       <!-- Sección de inicio con imagen y artículo principal -->
       <section id="inicio">
-        <!-- Imagen destacada -->
+        <!-- <figure> agrupa una imagen con su descripción -->
         <figure style="border: solid black">
           <img src="./img/Lenguaje de tecnologia 2.jpg" alt="">
+          <!-- <figcaption> provee una leyenda para la imagen -->
           <figcaption>Portada principal del blog para hacerlo mas llamativo</figcaption>
         </figure>
         
-        <!-- Artículo principal -->
+        <!-- <article> representa un contenido independiente, aquí el artículo principal -->
+        <!-- Se usa <mark> para resaltar la palabra "destacada" -->
         <article style="border: solid black">
           <h2>Lo usamos para subrayar una palabra <mark>destacada</mark></h2>
           <p>Ponemos una definicion que resuma todo lo que vamos a ofrecer</p>
@@ -38,6 +43,7 @@
       </section>
       
       <!-- Barra lateral con noticias -->
+      <!-- <aside> contiene contenido complementario o adicional -->
       <aside id="referencias" style="border: solid black">
         <h3>Nuevo</h3>
         <p>Ejemplo 1</p>
@@ -45,7 +51,8 @@
         <p>Ejemplo 3</p>
       </aside>
       
-      <!-- Sección de artículos secundarios -->
+      <!-- Sección de artículos secundarios (Productos) -->
+      <!-- Cada <article> dentro de esta sección muestra un producto -->
       <section id="productos">
         <article style="border: solid black">
           <h3>Titulo 1</h3>
@@ -64,7 +71,8 @@
         </article>
       </section>
       
-      <!-- Sección de tabla de datos -->
+      <!-- Sección de tabla de datos para estadísticas -->
+      <!-- Uso de <table>, <tbody>, <tr>, <th> y <td> para organizar datos en formato tabular -->
       <Section style="border: solid black">
         <h2>Estadísticas que enseñen las vistas de los productos</h2>
           <table border="1">
@@ -91,7 +99,8 @@
 
       <br><br>
       
-      <!-- Formulario de suscripción agrupado -->
+      <!-- Sección de contacto con formulario -->
+      <!-- Aquí se utiliza <fieldset> para agrupar elementos del formulario y <legend> para su título -->
       <section id="contacto" style="border: solid black">
         <fieldset>
           <legend>Una tabla para sus datos del cliente</legend>
@@ -107,13 +116,16 @@
         </fieldset>
       </section>  
       
-      <!-- Bloque con fecha y detalles interactivos -->
+      <!-- Bloque con fecha de publicación y detalles interactivos -->
+      <!-- <time> muestra la fecha y <details>/<summary> permiten mostrar u ocultar contenido extra -->
       <p style="border: solid black">Este artículo se publicó el <time datetime="2025-04-03">3 de Abril de 2025</time>.</p>
       <details style="border: solid black">
         <summary>Más Detalles</summary>
+        <!-- Sección interna dentro de <details> para agrupar enlaces adicionales -->
           <section>
             <div>
-              <h3></h3>
+              <!-- Se muestran enlaces como opciones adicionales -->
+              <h3>Enlaces</h3>
               <ul><li><a href="https://www.certus.edu.pe">Opcion 1</a></li></ul>
               <ul><li><a href="https://campusdigital.certus.edu.pe/login/index.php">Opcion 2</a></li></ul>
               <ul><li><a href="https://intranet.certus.edu.pe/Login/">Opcion 3</a></li></ul>
@@ -124,6 +136,7 @@
     </main>
     
     <!-- Pie de página -->
+    <!-- <footer> cierra la página y muestra información de derechos -->
     <footer style="border: solid black">
       <p>© 2025 Mi Blog Web. Todos los derechos reservados.</p>
     </footer>
