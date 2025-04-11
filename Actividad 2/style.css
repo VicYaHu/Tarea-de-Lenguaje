@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* El body toma toda la pantalla y centra el contenido */
+  body {
+    font-size: 15px; /* Tamaño de fuente base */
+    font-family: 'Lexend Deca', sans-serif; /* Fuente principal para textos */
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Contenedor que agrupa las 3 tarjetas */
+  .container {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 920px; /* Ajusta si deseas hacerlo más ancho o más angosto */
+  }
+  
+  /* Estilos base de cada tarjeta */
+  .card {
+    flex: 1;
+    padding: 3rem; /* Espacio interno */
+    color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 490px; /* Esto fija el alto mínimo de los cuadros */
+  }
+  
+  /* Ícono en cada tarjeta */
+  .card-icon {
+    width: 60px;  /* Ajusta si lo quieres más grande/pequeño */
+    margin-bottom: -0.1rem;
+  }
+  
+  /* Título: usa la fuente Big Shoulders Display */
+  .card h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem; /* Tamaño grande */
+    margin-bottom: 0rem;
+  }
+  
+  /* Texto descriptivo: usa la fuente Lexend Deca */
+  .card p {
+    margin-top: 0rem; /* Ajusta este valor según necesites */
+    font-size: 0.9375rem; /* ~15px */
+    line-height: 1.6;     /* Separación de líneas */
+    margin-bottom: 2rem;  /* Espacio con el botón */
+  }
+  
+  /* Botón */
+  .btn {
+    display: inline-block;
+    width: auto;              /* Se ajusta al contenido */
+    align-self: flex-start;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: hsl(0, 0%, 95%);
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  /* Colores de cada tarjeta */
+  .sedan {
+    background-color: hsl(31, 77%, 52%) !important;
+  }
+  .suvs {
+    background-color: hsl(184, 100%, 22%) !important;
+  }
+  .luxury {
+    background-color: hsl(179, 100%, 13%) !important;
+  }
+  
+.sedan .btn{
+  color: hsl(31, 77%, 52%) !important;
+}
+.sedan .btn:hover,
+.sedan .btn:focus,
+.sedan .btn:active {
+  color: hsl(31, 77%, 52%) !important;
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.suvs .btn{
+  color: hsl(184, 100%, 22%) !important;
+}
+.suvs .btn:hover,
+.suvs .btn:focus,
+.suvs .btn:active {
+  color: hsl(184, 100%, 22%) !important;
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.luxury .btn{
+  color: hsl(179, 100%, 13%) !important;
+}
+.luxury .btn:hover,
+.luxury .btn:focus,
+.luxury .btn:active {
+  color: hsl(179, 100%, 13%) !important;
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+}
