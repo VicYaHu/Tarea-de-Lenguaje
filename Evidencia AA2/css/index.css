@@ -1,0 +1,378 @@
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  /* HEADER */
+  #header {
+    width: 100%;
+  }
+  
+  .top-message {
+    background-color: #004f4f;
+    color: white;
+    padding: 8px 16px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  .top-menu span {
+    margin-left: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: white;
+  }
+  
+  #logo {
+    height: 50px;
+  }
+  
+  .search-barra {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-left: 8px;
+  }
+  
+  .user-actions{
+    display: flex;
+    gap: 16px;
+  }
+  
+  .user-init, .cart {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .main-nav {
+    background-color: white;
+    padding: 12px 32px 32px 32px;
+  }
+  
+  .category-menu {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+  }
+  
+  .category-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #f5fafd;
+    border-radius: 24px;
+    color: #222222;
+    transition: all 0.3s ease;
+  }
+  
+  .category-menu li a:hover {
+    background-color: #edf6fb; /* tono más claro al hacer hover */
+    box-shadow: 0 0 0 1px #d6ecf5;
+  }
+
+  .category-menu .activo a {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+  }  
+
+  /* MAIN BANNER */
+  #main-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8f1f1;
+    padding: 40px 60px;
+  }
+  
+  .banner h2 {
+    font-size: 24px;
+    color: #111;
+  }
+  
+  .banner-text p {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  
+  .banner-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #004f4f;
+  }
+  
+  /* SECCIÓN DE DESCUENTOS */
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+  }
+  
+  .highlight {
+    color: #0076ba;
+  }
+  
+  .product-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 0 32px 32px;
+  }
+  
+  .product-carousel .product-card {
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 16px;
+    min-width: 200px;
+    position: relative;
+  }
+  
+  .promotion-label {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 12px;
+  }
+  
+  .save {
+    color: green;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  /*.likes {
+    text-align: right;
+    margin-top: 8px;
+  } */
+  
+  /* CATEGORÍAS */
+  #category-offer {
+    padding: 32px;
+  }
+  
+  .category-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .category-item {
+    text-align: center;
+    width: 100px;
+  }
+  
+  .category-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* MARCAS */
+  .brand-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /*para que se haga una barra por si se desborda*/
+    margin: 10px;
+    justify-content: center;
+  }
+  
+  .brand-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .brand-card h3 {
+    margin-top: 8px;
+  }
+  
+  /* PROMOCIONES */
+  #promotions {
+    padding: 32px;
+    text-align: center;
+  }
+  
+  .promo-banners img {
+    max-width: 100%;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  
+  /* FOOTER */
+  #footer {
+    background-color: #004f4f;
+    color: white;
+    padding: 32px;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .footer-contact, .footer-links, .footer-extra {
+    min-width: 200px;
+  }
+  
+  .footer-links ul,
+  .footer-extra ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li,
+  .footer-extra li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #bbb;
+  }
+/* Media query para mobile (hasta 767px) */
+@media (max-width: 767px) {
+    .top-message {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 11px;
+    }
+  
+    .header-main {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      padding: 16px;
+    }
+  
+    .search-barra {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .user {
+      justify-content: center;
+    }
+  
+    .main-nav {
+      overflow-x: auto;
+    }
+  
+    .category-menu {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      padding: 0;
+    }
+  
+    .category-menu li {
+      flex-shrink: 0;
+    }
+  
+    #main-banner {
+      flex-direction: column-reverse;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .product-carousel,
+    .brand-carousel {
+      padding: 16px;
+    }
+  
+    .category-icons {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .promo-banners {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-top {
+      flex-direction: column;
+      gap: 24px;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .footer-contact, .footer-links, .footer-extra {
+      min-width: 100%;
+    }
+  }
+  
+  /* Tablets (768px a 1024px) */
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .header-main {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+  
+    .search-barra {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    #main-banner {
+      padding: 30px;
+      flex-direction: row;
+      gap: 20px;
+    }
+  
+    .product-carousel,
+    .brand-carousel {
+      gap: 16px;
+    }
+  
+    .footer-top {
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: space-between;
+    }
+  
+    .footer-contact, .footer-links, .footer-extra {
+      min-width: 45%;
+    }
+  }
+    

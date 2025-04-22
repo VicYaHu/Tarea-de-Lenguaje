@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalle del Producto - Camiseta Moderna</title>
+  <link rel="stylesheet" href="./Detalle.css">
+  <link rel="shortcut icon" href="./img/categoria.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <h1>Tienda de Ropa Moderna</h1>
+  </header>
+
+  <main>
+    <!-- Galería -->
+    <section class="product-gallery">
+      <div class="main-image">
+        <img src="./img/camisa.png" alt="Camiseta Moderna - Imagen Principal" id="main-img">
+      </div>
+      <div class="miniaturas">
+        <img src="./img/camisa.png" alt="Vista predeterminada" onclick="cambiarImagen(this)">
+        <img src="./img/blanco.png" alt="Vista Blanco" onclick="cambiarImagen(this)">
+        <img src="./img/negro.png" alt="Vista Negro" onclick="cambiarImagen(this)">
+      </div>
+    </section>
+
+    <!-- Información -->
+    <section class="product-info">
+      <h2>Camiseta Moderna</h2>
+      <div class="bloque-precio">
+        <span class="precio-descuento">S/49.99</span>
+        <span class="precio-original">S/62.49</span>
+        <span class="etiqueta-descuento">-20%</span>
+      </div>
+
+      <div class="rating">★★★★☆ <span>(234 opiniones)</span></div>
+      <p class="stock disponible">✔ En stock</p>
+
+      <h3>Descripción</h3>
+      <p>
+        Esta camiseta moderna está confeccionada en 100% algodón, ofreciendo comodidad y durabilidad.
+        Con un diseño gráfico exclusivo, es perfecta para un estilo casual y moderno.
+      </p>
+
+      <h3>Características</h3>
+      <ul>
+        <li>Material: 100% algodón</li>
+        <li>Tallas disponibles: S, M, L, XL, XXL</li>
+        <li>Colores: Azul, Blanco y Negro</li>
+        <li>Estampado: Diseño exclusivo de la colección urbana</li>
+        <li>Lavado: Lavar a máquina a 30°C</li>
+      </ul>
+
+      <div class="tallas">
+        <label>Selecciona tu talla:</label>
+        <div class="talla-opciones">
+          <button class="talla">S</button>
+          <button class="talla">M</button>
+          <button class="talla">L</button>
+          <button class="talla">XL</button>
+          <button class="talla">XXL</button>
+        </div>
+      </div>
+
+      <div class="botones-compra">
+        <a href="compra.html"><button>Comprar Ahora</button></a>
+        <a href="index.html"><button>Volver a Productos</button></a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function cambiarImagen(elemento) {
+      document.getElementById("main-img").src = elemento.src;
+    }
+
+    // Activar selección de tallas
+    const botonesTalla = document.querySelectorAll('.talla');
+    botonesTalla.forEach(boton => {
+      boton.addEventListener('click', () => {
+        botonesTalla.forEach(b => b.classList.remove('active'));
+        boton.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
